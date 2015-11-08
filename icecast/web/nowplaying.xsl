@@ -5,6 +5,7 @@
 <head>
 <link rel="stylesheet" href="http://play.dogmazic.net/themes/reborn/templates/default.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="http://play.dogmazic.net/themes/reborn/templates/dark.css" type="text/css" media="screen" />
+<meta http-equiv="refresh" content="5">
 </head>
 <body>
 <xsl:for-each select="source">
