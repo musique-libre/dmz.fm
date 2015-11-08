@@ -45,11 +45,11 @@
 					'volume':90,
 					'autoplay':true,
 					'buffering':5,
-					'title':'Dogmazic WebPlayer',
+					'title':'Dogmazic WebRadio',
 					'bgcolor':'#FFFFFF',
-					'skin':'simple-gray',
-					'width':300,
-					'height':122
+					'skin':'eastanbul',
+					'width':467,
+					'height':26
 					});
 				</script>
 				<!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
@@ -61,6 +61,9 @@
 						document.getElementById('maincontainer').style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
 					}
 				</script>
+				<object data="http://dmz.fm:8000/nowplaying.xsl" width="467" height="25"></object>
+			</div>
+			<div style="text-align: right;">
 				<a href="javascript:togglePlayerSource();" title="Show web player source code"><img src="show_source.png" border="0" /></a>
 			</div>
 		</div>
@@ -70,8 +73,9 @@
 		<br />
 		<textarea id="player_source_text"  rows="4" cols="70">&lt;script type="text/javascript" src="https://hosted.muses.org/mrp.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-MRP.insert({'url':'http://dmz.fm:8000/stream.ogg', 'codec':'ogg', 'volume':90, 'autoplay':true, 'buffering':5, 'title':'Dogmazic WebPlayer', 'bgcolor':'#FFFFFF', 'skin':'simple-gray', 'width':300, 'height':122});
-&lt;/script&gt;</textarea>
+MRP.insert({'url':'http://dmz.fm:8000/stream.ogg', 'codec':'ogg', 'volume':90, 'autoplay':true, 'buffering':5, 'title':'Dogmazic WebRadio', 'bgcolor':'#FFFFFF', 'skin':'eastanbul', 'width':467, 'height':26});
+&lt;/script&gt;
+&lt;object data="http://dmz.fm:8000/nowplaying.xsl" width="467" height="25"&gt;&lt;/object&gt;</textarea>
 	</div>
 	</body>
 </html>
