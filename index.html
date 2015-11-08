@@ -4,7 +4,24 @@
 
 		<link rel="stylesheet" href="http://play.dogmazic.net/themes/reborn/templates/default.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="http://play.dogmazic.net/themes/reborn/templates/dark.css" type="text/css" media="screen">
-		<style>#loginPage #headerlogo, #registerPage #headerlogo { background-image: url('http://play.dogmazic.net/images/dogmazic_login.png') !important; }</style>
+		<style type="text/css">
+			#loginPage #headerlogo, #registerPage #headerlogo {
+				background-image: url('http://play.dogmazic.net/images/dogmazic_login.png') !important;
+			}
+			
+			#webplayer {
+				text-align: center;
+			}
+			
+			#player_source {
+				display: none;
+				text-align: center;
+			}
+			
+			html {
+				min-height:100%;
+			}
+		</style>
 	</head>
 	<body id="loginPage">
 	<div id="maincontainer">
@@ -18,7 +35,7 @@
 			Direct Stream: <a href="http://dmz.fm:8000/stream.ogg">http://dmz.fm:8000/stream.ogg</a><br />
 			Icecast Status: <a href="http://dmz.fm:8000/status.xsl">http://dmz.fm:8000/status.xsl</a><br />
 			<br />
-			<div id="webplayer" style="text-align: center;">
+			<div id="webplayer">
 				<!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
 				<script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
 				<script type="text/javascript">
@@ -39,6 +56,9 @@
 				<script type="text/javascript">
 					function togglePlayerSource() {
 						document.getElementById('player_source').style.display = 'block';
+						
+						document.body.style.background = 'url(\'char_vegetation.jpg\') no-repeat center center / cover';
+						document.getElementById('maincontainer').style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
 					}
 				</script>
 				<a href="javascript:togglePlayerSource();" title="Show web player source code"><img src="show_source.png" border="0" /></a>
@@ -46,7 +66,7 @@
 		</div>
 	</div>
 	
-	<div id="player_source" style="display: none; text-align: center;">
+	<div id="player_source">
 		<br />
 		<textarea id="player_source_text"  rows="4" cols="70">&lt;script type="text/javascript" src="https://hosted.muses.org/mrp.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
