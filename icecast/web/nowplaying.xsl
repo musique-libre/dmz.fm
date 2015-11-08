@@ -21,11 +21,11 @@
 					var title='<xsl:value-of select="title" />';
 					
 					function goSearchArtist() {
-					   document.location.href = 'http://play.dogmazic.net/search.php?type=song&amp;action=search&amp;type=artist&amp;rule_1_operator=0&amp;rule_1=name&amp;rule_1_input=' + encodeURI(artist);
+					   window.open('http://play.dogmazic.net/search.php?type=song&amp;action=search&amp;type=artist&amp;rule_1_operator=0&amp;rule_1=name&amp;rule_1_input=' + encodeURI(artist));
 					}
 					
 					function goSearchSong() {
-					   document.location.href = 'http://play.dogmazic.net/search.php?type=song&amp;action=search&amp;type=song&amp;rule_1_operator=0&amp;rule_1=artist&amp;rule_1_input=' + encodeURI(artist) + '&amp;rule_2_operator=0&amp;rule_2=title&amp;rule_2_input=' + encodeURI(title);
+					   window.open('http://play.dogmazic.net/search.php?type=song&amp;action=search&amp;type=song&amp;rule_1_operator=0&amp;rule_1=artist&amp;rule_1_input=' + encodeURI(artist) + '&amp;rule_2_operator=0&amp;rule_2=title&amp;rule_2_input=' + encodeURI(title));
 					}
 				</script>
 			</span>
