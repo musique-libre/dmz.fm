@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Dogmazic.net WebRadio</title>
+
+		<link rel="stylesheet" href="http://play.dogmazic.net/themes/reborn/templates/default.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="http://play.dogmazic.net/themes/reborn/templates/dark.css" type="text/css" media="screen">
+		<style>#loginPage #headerlogo, #registerPage #headerlogo { background-image: url('http://play.dogmazic.net/images/dogmazic_login.png') !important; }</style>
+	</head>
+	<body id="loginPage">
+	<div id="maincontainer">
+		<a href="http://dogmazic.net"><div id="header">
+			<h1 id="headerlogo" />
+		</div></a>
+		<br /><br />
+		<div id="loginbox">
+			<h1>Dogmazic.net WebRadio</h1>
+			<br /><br />
+			<!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+			<script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+			<script type="text/javascript">
+				MRP.insert({
+				'url':'http://dmz.fm:8000/stream.ogg',
+				'codec':'ogg',
+				'volume':90,
+				'autoplay':true,
+				'buffering':5,
+				'title':'Dogmazic WebPlayer',
+				'bgcolor':'#FFFFFF',
+				'skin':'eastanbul',
+				'width':467,
+				'height':26
+				});
+			</script>
+			<!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+			<script type="text/javascript">
+				function togglePlayerSource() {
+					document.getElementById('player_source').style.display = 'block';
+				}
+			</script>
+			<a href="javascript:togglePlayerSource();" title="Show web player source code"><img src="show_source.png" border="0" /></a>
+			<br /><br />
+			<a href="http://dmz.fm:8000/stream.ogg">http://dmz.fm:8000/stream.ogg</a>
+		</div>
+	</div>
+	
+	<div id="player_source" style="display: none; text-align: center;">
+		<br />
+		<textarea id="player_source_text"  rows="4" cols="70">&lt;script type="text/javascript" src="https://hosted.muses.org/mrp.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+MRP.insert({'url':'http://dmz.fm:8000/stream.ogg', 'codec':'ogg', 'volume':90, 'autoplay':true, 'buffering':5, 'title':'Dogmazic WebPlayer', 'bgcolor':'#FFFFFF', 'skin':'eastanbul', 'width':467, 'height':26});
+&lt;/script&gt;</textarea>
+	</div>
+	</body>
+</html>
