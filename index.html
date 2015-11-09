@@ -9,6 +9,10 @@
 				background-image: url('http://play.dogmazic.net/images/dogmazic_login.png') !important;
 			}
 			
+			#maincontainer {
+				background-color: rgba(0, 0, 0, 0.7) !important;
+			}
+			
 			#webplayer {
 				text-align: center;
 			}
@@ -18,7 +22,17 @@
 				text-align: center;
 			}
 			
+			#player_footer {
+				text-align: right;
+				font-size: 12px !important;
+			}
+			
+			body {
+				background-color: transparent !important;
+			}
+			
 			html {
+				background: url('char_vegetation.jpg') no-repeat center center / cover;
 				min-height:100%;
 			}
 		</style>
@@ -32,8 +46,7 @@
 		<div id="loginbox">
 			<h1>Dogmazic.net WebRadio</h1>
 			<br />
-			Direct Stream: <a href="http://dmz.fm:8000/stream.ogg">http://dmz.fm:8000/stream.ogg</a><br />
-			Icecast Status: <a href="http://dmz.fm:8000/status.xsl">http://dmz.fm:8000/status.xsl</a><br />
+			Direct Stream: <a href="http://dmz.fm:8000/stream.ogg">OGG</a> | <a href="http://dmz.fm:8000/stream.mp3">MP3</a><br />
 			<br />
 			<div id="webplayer">
 				<!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
@@ -56,14 +69,12 @@
 				<script type="text/javascript">
 					function togglePlayerSource() {
 						document.getElementById('player_source').style.display = 'block';
-						
-						document.body.style.background = 'url(\'char_vegetation.jpg\') no-repeat center center / cover';
-						document.getElementById('maincontainer').style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
 					}
 				</script>
 				<object data="http://dmz.fm:8000/nowplaying.xsl" width="467" height="25"></object>
 			</div>
-			<div style="text-align: right;">
+			<div id="player_footer">
+				<a href="http://dmz.fm:8000/status.xsl">Icecast Status</a>
 				<a href="javascript:togglePlayerSource();" title="Show web player source code"><img src="show_source.png" border="0" /></a>
 			</div>
 		</div>
