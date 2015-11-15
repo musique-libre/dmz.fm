@@ -32,7 +32,11 @@
 			}
 			
 			html {
-				background: url('char_vegetation.jpg') no-repeat center center / cover;
+				background: url('char_vegetation.jpg') no-repeat center center fixed;
+				-webkit-background-size: cover;
+			    -moz-background-size: cover;
+			    -o-background-size: cover;
+			    background-size: cover;
 				min-height:100%;
 			}
 		</style>
@@ -59,7 +63,7 @@
 					'autoplay':true,
 					'buffering':5,
 					'title':'Dogmazic WebRadio',
-					'bgcolor':'#FFFFFF',
+					'bgcolor':'#222',
 					'skin':'eastanbul',
 					'width':467,
 					'height':26
@@ -84,7 +88,7 @@
 		<br />
 		<textarea id="player_source_text"  rows="4" cols="70">&lt;script type="text/javascript" src="https://hosted.muses.org/mrp.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-MRP.insert({'url':'http://dmz.fm:8000/stream.ogg', 'codec':'ogg', 'volume':90, 'autoplay':true, 'buffering':5, 'title':'Dogmazic WebRadio', 'bgcolor':'#FFFFFF', 'skin':'eastanbul', 'width':467, 'height':26});
+MRP.insert({'url':'http://dmz.fm:8000/stream.ogg', 'codec':'ogg', 'volume':90, 'autoplay':true, 'buffering':5, 'title':'Dogmazic WebRadio', 'bgcolor':'#222', 'skin':'eastanbul', 'width':467, 'height':26});
 &lt;/script&gt;
 &lt;object data="http://dmz.fm:8000/nowplaying.xsl" width="467" height="25"&gt;&lt;/object&gt;</textarea>
 	</div>
