@@ -15,8 +15,8 @@
 <body>
 
 <xsl:for-each select="source">
-   <xsl:if test="position()=1">
-	   <xsl:choose>
+   <xsl:choose>
+	  <xsl:if test="position() = 1">
 		  <xsl:when test="listeners">
 			 <xsl:if test="artist">
 				<span>
@@ -40,10 +40,10 @@
 		  <xsl:otherwise>
 			 <h3><xsl:value-of select="@mount" /> is currently offline</h3>
 		  </xsl:otherwise>
-	   </xsl:choose>
-	</xsl:if>
+      </xsl:if>
+   </xsl:choose>
 </xsl:for-each>
-Listeners: <xsl:value-of select="sum(source/listeners)"/>
+<span style="float: right;">Listeners: <xsl:value-of select="sum(source/listeners)"/></span>
 
 </body>
 </html>
