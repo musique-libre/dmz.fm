@@ -32,11 +32,19 @@
 				width: 100%;
 				height: 20px;
 				bottom:0px;
-				text-align: right;
 				background-color: rgba(0, 0, 0, 0.7);
+				font-size: 12px;
 			}
 			
-			#dmzfooter img {
+			#footerlinks {
+				padding-left: 10px;
+			}
+			
+			#footerico {
+				float: right;
+			}
+			
+			#footerico img {
 				max-height: 18px;
 			}
 			
@@ -104,12 +112,17 @@
 &lt;script type="text/javascript"&gt;
 MRP.insert({'url':'http://dmz.fm:8000/stream.ogg', 'codec':'ogg', 'volume':90, 'autoplay':true, 'buffering':5, 'title':'Dogmazic WebRadio', 'bgcolor':'#222', 'skin':'eastanbul', 'width':467, 'height':26});
 &lt;/script&gt;
-&lt;object data="http://dmz.fm:8000/nowplaying.xsl" width="467" height="25"&gt;&lt;/object&gt;</textarea>
+&lt;object data="http://dmz.fm:8000/nowplaying.xsl" type="text/html" width="467" height="25"&gt;&lt;/object&gt;</textarea>
 	</div>
 	
 	<div id="dmzfooter">
-		<a href="https://dirble.com/station/dogmazic-webradio-dmzfm" title="Dirble" target="_blank"><img src="ico/dirble.png" border="0"></a>
-		<a href="http://www.internet-radio.com/station/dogmazic/" title="Internet-Radio" target="_blank"><img src="ico/internet-radio.gif" border="0"></a>
+		<span id="footerlinks">
+			<a href="http://pages.dmz.fm/create">Create page</a>
+		</span>
+		<span id="footerico">
+			<a href="https://dirble.com/station/dogmazic-webradio-dmzfm" title="Dirble" target="_blank"><img src="ico/dirble.png" border="0"></a>
+			<a href="http://www.internet-radio.com/station/dogmazic/" title="Internet-Radio" target="_blank"><img src="ico/internet-radio.gif" border="0"></a>
+		</span>
 	</div>
 	</body>
 </html>
