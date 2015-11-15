@@ -36,7 +36,7 @@
 			 <xsl:if test="artist">
 				<span id="song_info">
 					<span><a href="#" onClick="goSearchArtist();" title="Show artist"><xsl:value-of select="artist" /></a></span>
-					<span>&nbsp;-&nbsp;</span>
+					<span>-</span>
 					<span><a href="#" onClick="goSearchSong();" title="Show song"><xsl:value-of select="title" /></a></span>
 					<script type="text/javascript">
 						var artist='<xsl:value-of select="artist" />';
